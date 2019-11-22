@@ -424,7 +424,7 @@ img {
 
 .page-header {
   background-color: #283645;
-  background-image: url("../../img/back-mobile@1x.jpg");
+  background-image: url("../img/back-mobile@1x.jpg");
   background-size: cover;
   min-height: 462px; }
 
@@ -543,7 +543,7 @@ img {
 @media (min-width: 660px) {
   .page-header {
     background-color: #283645;
-    background-image: url("../../img/back-tablet@1x.jpg");
+    background-image: url("../img/back-tablet@1x.jpg");
     background-size: cover;
     min-height: 715px; }
   .page-header--wrapper {
@@ -596,7 +596,7 @@ img {
 @media (min-width: 960px) {
   .page-header {
     background-color: #283645;
-    background-image: url("../../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-size: cover;
     min-height: 815px; }
   .page-header--wrapper {
