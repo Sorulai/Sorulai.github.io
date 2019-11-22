@@ -1,10 +1,319 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Pink</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-Привет
-hhu
+<div style="display: none">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-android-logo" viewBox="0 0 43 47">
+  <image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACSElEQVRYhe2Zz1EbMRSHf/ZQwFJBTAfhaF1iKgDfdbArAFcAVACpwBx8j6kAc7GOoQNMBWwHyTzmKd55I63eJtaGg76ZPXj/SJ/W0pP2aYAEq+14BODJGneivJcOz84at1M89wrgLHVvUpYLWwJ4s8bdiPMVgAsA5wAmAKrA4zWADYBHAGtrXC3KoDK/WOPmKQ+tLEn89K3n39cAZhHBGCS6BrAgaf+vATiVjfhrWRa+AvANwDOLdpGUkNitL88ad695SC3Lwu//KCmprXHH2puH2htX2/FdQPSBDw0v/Dabf3fF5arQ9tkJ960mG2vcGfYDcJYo5pj7KQ3IH+IajYVNyuNI2ahl4NyIBxo4EqSY8OD6Gik/GRo1cTb0JnIwtcat28rV9NnzHkRV9WhkR4p7DkGyHo2spj8egr7q6QfNAOutxanwpQldMr7mpPXlfcjygmLmFxqaZV1u2OmCZ80HchqstuOZCPokPPcxb7Ud/+pL0Bo3wD62L8X0PqdoIOfmKnCub0LrkLthZBXVV2yNEaq/Uq+6PgNFNhdFNhdFNhdFNhdFNhdFNhdDTkdKVImyjITq35DslPNVNR/31rjF/zTl+kl4x07kN9V8MD719Jn8J3cWQ9NnFyLzl4Oa62lFm0WkZNpl4wNOsuMjhtxr8PhM+Hdr3MtBZBvSsS5xK/cbxHM3nC2XJP/6JiXO5qLI5qLI5qKr7KETdp3K6yr7GDnfunHRcj1WXpBOspxZpI03j884ts4+fJ02kpvTNk0kqUbuAfAbybS3FdGC4nAAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-apple-logo" viewBox="0 0 47 56">
+  <image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAACiUlEQVRoge2Zi23CMBCGfVEHoBO03QAmKNmAEegEbSeATkA7AWwATACdADYgnSB0gqsOziEktnEgii9SPylCIsj5Y873VCFBxCEizvFEP6ggH1h0imXkikfEDiKuDKI1HQEyyyBi17LbmlSa5gO84zuHcGIqQGqZwqG0MZCmm4QPPITvBEgtg4gbD/HyvAwf0ktMBEgtg4jjVh5SdRTv8ulyhSu7eHKZtXiWuzoW8WCvlForpZYAMKtrUajyY0R8VErRpb0DidrSBQD7K9bq83oP/PUPf64BYF1lPetDyCN4RMg5J1zW/ITXevN0n3rN6m6UQ/rE8yF5KH+Z6ojJgoupb1Xo7HR9hXc9drppaFOGl4Tbcm0pZC8ABeH012wq21jzxHSgo5xwOmirFgjf86Wi3JcU8WRWMifILT8BAH0ezYbdkfRd37K5ZPFE7/xrOE1eJEXhBLCty6wfT8SmiEs7L6/8OmdmSxVI/HNAYT582X5D4v3CbhgS7VnaKH7huhm5bgrgt83infyLD4V08U43ThEWm9NyFfe2+jjiql4y1gwg0rmxYEYu8d/CxVMBPzbdiDhPls7IVHzrYiRtQRVFvOQ7btpVSj+0mmnehLT4ZVBJ1RhxT2mozYZMZtcS08k47DwHAWf6KZBF1nTirq3MwZaZOMttACBp0cFNzjpmzEcwOdUw6+T2tGSy5lhpMsK2vxHsebIeTimfZ9uXaj6f+R6OdSbFf4+kyTRtai+f27vESwtcvWIPx1oG8hvGjci6zLur+WSFxzwhuW1SfsMLpDzJu3Y4V8+I33PQdjbGNKzR5/Goz8DOWD3d8gJUkpG44sNpd2k47HW4ecZrms3ql6dY40Yp9QcXxXEmrW7vKQAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="icon-burger" viewBox="0 0 49.945 24.007">
+  <g id="miu">
+    <g id="editor_list_view_hambuger_menu_glyph">
+      <g>
+        <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+      </g>
+      <g>
+        <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+      </g>
+    </g>
+  </g>
+</symbol><symbol id="icon-close" viewBox="0 0 23.867 23.867">
+  <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"></path>
+</symbol><symbol id="icon-crop" viewBox="0 0 48 48">
+  <path fill="none" d="M0,0h48v48H0V0z"></path>
+  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
+</symbol><symbol id="icon-footer" viewBox="0 0 145 40">
+  <image id="glasses_copy" data-name="glasses copy" width="59" height="40" xlink:href="data:img/png;base64,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"></image>
+  <image id="PINK" x="71" y="17" width="74" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAXCAYAAACswNlYAAACRElEQVRYhdWZ723CMBDFH6gLpCPAl36n6gQwAh0hjEBGICOQEcIIdASyAit4hFaunqsjOE7iP6nypKhFtc/md+fzXbp4+9idAeRwSwFoxHPpGa+1AXDl2EPHGLN25RgTY409gB33P0Z/czWob48NNtyYa+EjgBN/X3SMkWsXAMqR+xizxlj7MoCKF/GHyhEpGYAVJ67oyRuAdw8vdelEW1+R7IVIQtJ7qiSo+4BNli0v6rBf82jGUB3Zno/akPSRVUsPQyXDGIy0vvw2RMZBGeH/l6yQ9AcfUAaWOXLbSKAM/I2I2CnVCQkBoCCiIAYoEL6xeeRtM5WckBAIKkUe+WSuBDe/SbBGW72QEAgq48+YwBRhGftnsU4K5UMgIRCUORqxr/NmonyV0xHog4QAUEfWU0hU95Ss69DyeixJSGD96DwZPqBkHdWILxRbhbhZY+arNiTw+zjty4Jz5bjBMhrai0hSnv3ZUBn7V65fsxMIyYkSUsXnxs9X2r/bJkpQY0L8Qo9bjUaU6SlrOqhmLvHRXkSNbMIP4tKoQ289JYrCdesaT62LaGa3PPo+skGCiCy4Lg8JqmAHbnteSbqcEJCUzFengCK363WOfBOS25wRUh5MLXkkapErh0qWHTZJ+0/OmBOodjFaj5zfVwKoVv57cMacQMHSPPvmqy414mgaZ/x2BnMDBeZJ84IxRXtjTe5zBAV6PeWl8pTc5wrK5KuUb0IfkvuSYaYS9GzanrbranFC1ja3mJ7v+q+Q7xomuSsA1Q+xrqn0msEP1QAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="icon-html-footer" viewBox="0 0 26.943 34.09">
+  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"></path>
+</symbol><symbol id="icon-logotype-white-desktop" viewBox="0 0 146.3 40.375">
+  <g>
+    <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"></path>
+    <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"></path>
+    <path d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"></path>
+    <path d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"></path>
+  </g>
+  <path fill="#D22856" d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z"></path>
+  <g>
+    <path d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z"></path>
+    <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z"></path>
+  </g>
+  <g>
+    <g>
+      <path fill="#D22856" d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z"></path>
+    </g>
+  </g>
+  <g>
+    <g>
+      <path fill="#D22856" d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z"></path>
+    </g>
+  </g>
+  <g>
+    <g>
+      <path fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"></path>
+    </g>
+  </g>
+</symbol><symbol id="icon-logotype-white-mobile" viewBox="0 0 74.426 22.859">
+  <g>
+    <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
+    <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"></path>
+    <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"></path>
+    <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"></path>
+  </g>
+</symbol><symbol id="icon-logotype-white-tablet" viewBox="0 0 146.3 40.375">
+  <g>
+    <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"></path>
+    <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"></path>
+    <path d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"></path>
+    <path d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"></path>
+  </g>
+  <path d="M60.498,28.266"></path>
+  <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"></path>
+</symbol><symbol id="icon-microsoft-logo" viewBox="0 0 44 41">
+  <image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAkklEQVRYhe3UoQ3CYBRF4fsTBqjBYtAM0R1gHiDpNjACkg3QNUxQi4KUhA3eEU3ON8DNES+vTYfdJ8W629jmxeHRl2+vqgdpBtMMphlMM5hmMM1gmsE0g2mLC14nuYD75PYytP31da4ufR63v833fVO+PZ/EqXo0yT+0fNsvQTOYZjDNYJrBNINpBtMMphmMSvIFSz0Ppf61ISYAAAAASUVORK5CYII="></image>
+</symbol></svg>
+</div>
+
+	<header class="page-header">
+		<div class="page-header--wrapper">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav--wrapper">
+			<button class="main-nav__toggle" type="button">
+				<svg class="icon-burger" width="50" height="24">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use>
+					</svg>
+					<svg class="icon-close" width="24" height="23">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+					</svg>
+				<span class="visually-hidden">Открыть меню</span></button>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item site-list__item--logo"><a href="#">
+					<svg class="logo-pink-white-mobile" width="75" height="22">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-mobile"></use>
+					</svg>
+					<svg class="logo-pink-white-tablet" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-tablet"></use>
+					</svg>
+					<svg class="logo-pink-white-desktop" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-desktop"></use>
+					</svg>
+				</a></li>
+				<li class="site-list__item site-list__item--active"><a>Главная</a></li>
+				<li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+				<li class="site-list__item"><a href="form.html">Конкурс</a></li>
+				<li class="site-list__item"><a href="#">HTML Academy</a></li>
+				
+			</ul>
+			</div>
+		</nav>
+		<section class="download-app">
+			<div class="download-app--color">
+			<div class="download-app--wrapper">
+				<div class="download-app--wrapper-active">
+				<h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
+				<a class="download-app__link" href="#">Скачать приложение</a>
+				<ul class="download-app__list">
+					<li class="download-app__item"><a href="#">
+						<svg class="icon-apple-logo" width="47" height="56">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-apple-logo"></use>
+					</svg>
+					</a></li>
+					<li class="download-app__item"><a href="#">
+						<svg class="icon-android-logo" width="43" height="47">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-android-logo"></use>
+					</svg>
+					</a></li>
+					<li class="download-app__item"><a href="#">
+						<svg class="icon-microsoft-logo" width="44" height="41">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-microsoft-logo"></use>
+					</svg></a></li>
+				</ul>
+				<p class="download-app__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</div>
+			</div>
+		</div>
+		</section>
+		</div>
+	</header>
+
+	<main class="page-main">
+
+		<h1 class="visually-hidden">Преимущества</h1>
+		<section class="advantages">
+			<div class="advantages--wrapper">
+			<header class="advantages__header">
+				<h2 class="visually-hidden">Преимущества</h2>
+				<p class="advantages__slogan">Устали от серости мегаполиса?</p>
+				<p class="advantages__intro">Нам есть, что вам предложить!</p>
+			</header>
+			<div class="advantages__list--wrapper">
+			<ul class="advantages__list">
+				<li class="advantages__item advantages__item--happy">
+					<b class="advantages__b">Поднимает настроение</b>
+					<p class="advantages__par">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+				</li>
+				<li class="advantages__item advantages__item--word">
+					<b class="advantages__b">Меняет мир вокруг</b>
+					<p class="advantages__par">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				</li>
+				<li class="advantages__item advantages__item--friend">
+					<b class="advantages__b">Заводит новых друзей</b>
+					<p class="advantages__par">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+				</li>
+				
+			</ul>
+		</div>
+			<span class="advantages__img"></span>
+		</div>
+		</section>
+		
+		<article class="article">
+			<div class="article-list--wraper">
+				<div class="article--wrapper">
+					<h3 class="article__title">Эффект на 24 часа!</h3>
+					<p class="article__par">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+					<a class="article__link" href="#">Узнать больше об исследовании</a>
+				</div>
+			</div>
+		</article>
+
+		<section class="reviews">
+			<div class="reviews__wrapper slider">
+			<div class="reviews__list slider__list">
+			<blockquote class="reviews__item slider__item">
+				<cite class="reviews__name">Николай Петров</cite>
+				<p class="reviews__per">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				<span class="reviews__disr">25 лет, водитель трамвая</span>
+			</blockquote>
+			<blockquote class="reviews__item reviews__item--none slider__item">
+				<cite class="reviews__name">Вася Николаев</cite>
+				<p class="reviews__per">«Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»</p>
+				<span class="reviews__disr">30 лет, прораб</span>
+			</blockquote>
+			<blockquote class="reviews__item reviews__item--none-two slder__item">
+				<cite class="reviews__name">Коля Васечкин</cite>
+				<p class="reviews__per">«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»</p>
+				<span class="reviews__disr">45 лет, смотритель музея</span>
+			</blockquote>
+			<button class="reviews__prev">Предыдущий отзыв</button>
+			<button class="reviews__next">Следующий отзыв</button>
+			</div>
+			<p class="reviews__toggles slider__toggles">
+				<button class="slider__toggle" type="button">1</button>
+				<button class="slider__toggle" type="button">2</button>
+				<button class="slider__toggle" type="button">3</button>
+
+			
+			</p>
+			</div>
+			
+		</section>
+
+		<section class="rates ">
+				<table class="rates__table">
+					<tr>
+						<thead class="rates__table-head">
+							<th class="rates__value rates__value--empty">
+
+							</th>
+							<th class="rates__value">База
+								1,99 USD
+							</th>
+							<th class="rates__value rates__value--flag">
+								Стандарт
+								3,99 USD
+							</th>
+							<th class="rates__value">
+								Анлим
+								9,99 USD
+							</th>
+						</thead>
+					</tr>
+					<tbody class="rates__table-body">
+					<tr>
+						<td class="rates__field rates__field--empty rates__field--fill">Розовый фильтр</td>
+						<td class="rates__field rates__field--ok"></td>
+						<td class="rates__field rates__field--ok"></td>
+						<td class="rates__field rates__field--ok"></td>
+					</tr>
+					<tr>
+						<td class="rates__field rates__field--empty rates__field--fill">Смайлики</td>
+						<td class="rates__field rates__field--cancel"></td>
+						<td class="rates__field rates__field--ok"></td>
+						<td class="rates__field rates__field--ok"></td>
+					</tr>
+					<tr>
+						<td class="rates__field rates__field--empty rates__field--fill">Комментарии</td>
+						<td class="rates__field rates__field--cancel"></td>
+						<td class="rates__field rates__field--cancel"></td>
+						<td class="rates__field rates__field--ok"></td>
+					</tr>
+				</tbody>
+				</table>
+
+		</section>
+
+		<section class="map">
+			<div class="map--wparrep">
+			<h3 class="question">Остались вопросы?</h3>
+			<h3 class="question">Свяжитесь с нами!</h3>
+			<ul class="map__list">
+				<li class="map__item">
+					<b class="map__title">Звоните:</b>
+					<span class="map__dicr">+7 (812) 555-66-66</span>
+				</li>
+				<li class="map__item">
+					<b class="map__title">Пишите:</b>
+					<span class="map__dicr">mail@htmlacademy.ru</span>
+				</li>
+				<li class="map__item">
+					<b class="map__title">Приезжайте в гости:</b>
+					<span class="map__dicr">ул. Большая Конюшенная, 19/8</span>
+				</li>
+			</ul>
+		</div>
+			<img class="map__img" src="img/map.jpg" alt="Карта">
+		</section>
+
+		
+
+
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer--wrapper">
+			<div class="page-footer__coopyritng">
+			<a class="page-footer__link" href="#"><img class="page-footer__link-logo" src="img/logotype-blue-desktop.svg.png" alt="Логотип" width="147" height="40"></a>
+			</div>
+			<div class="page-footer__social social">
+			<ul class="page-footer__list">
+				<li class="page-footer__item">
+					<a class="page-footer__item__link page-footer__item__link--tw" href="#">Мы в твиттере</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--fb" href="#">Мы в фейсбуке</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--yt" href="#">Мы в ютубе</a>
+				</li>
+				
+			</ul>
+		</div>
+			<div class="page-footer__htmlacademy">
+				<span class="page-footer__htmlacademy--dicr">Разработано</span>
+				<a class="page-footer__htmlacademy--logo" href="#"></a>
+			</div>
+		</div>
+		</footer>
+
+
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
