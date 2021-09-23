@@ -16,11 +16,12 @@ const products = {
         let htmlCatalog = ''
         for (let i of CATALOG) {
             htmlCatalog += `
-            <li class="product-element">
+            <li class="product-element" data-id="${i.id}">
             <span class="product-element__name">${i.name}</span>
             <img class="product-element__img" src="${i.img}" alt="Sneakers">
             <span class="product-element__price">${i.price.toLocaleString()} USD</span>
             <button class="product-element__btn">Add to cart</button> 
+           
             </li>
             `
         }
@@ -33,12 +34,11 @@ const products = {
 }
 
 const header = {
-    rootHeader:document.getElementById('header'),
-
-    openCart: function(){
-        cart.render()
+    rootHeader: document.getElementById('header'),
+    openCart: function (event) {
+        cart.rootCart.style.display = 'block'
     },
-    render:function () {
+    render: function () {
         this.rootHeader.innerHTML = `
         <div class="header-container">
             <img class="header-icon" src="img/sneakers.svg" alt="sn">
@@ -47,27 +47,53 @@ const header = {
                 <li class="header-menu__element header-menu__element-active">For women</li>
                 <li class="header-menu__element">For kids</li>
             </ul>
-            <div class="header-counter" onclick="header.openCart()">0</div>
+            <div id="header-cart__main">
+                <div id="header-cart">Cart</div>
+                <span class="header-counter">0</span>
+            </div>
         </div>
         `
+        let el = document.getElementById('header-cart__main')
+        el.addEventListener('click', this.openCart)
+
+
     }
 }
 
-const cart ={
-    rootCart:document.getElementById('cart'),
-    closeCart:function () {
-        this.rootCart.innerHTML = ''
+const cart = {
+    rootCart: document.getElementById('cart'),
+    closeCart: function () {
+        this.rootCart.style.display = 'none'
 
     },
-    render:function () {
+    render: function () {
         this.rootCart.innerHTML = `
             <div class="cart-container">
             <div class="cart__close" onclick="cart.closeCart()"></div>
-            Корзина пуста
+            <ul id="cart-container__list">                        
+            </ul>
+            <div class="cart-container__bottom">
+                <div class="cart-container__fullprice">
+                    <span>Total</span>
+                    <span class="fullprice"></span>
+                </div>
+                <button class="cart-container__btn product-element__btn">Checkout</button>
+            </div>
             </div>
         `
 
+
+
     }
 }
+
+
 products.render()
 header.render()
+cart.render()
+
+
+
+
+
+
