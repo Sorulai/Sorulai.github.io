@@ -51,7 +51,24 @@ const game = {
                 this.setGameStatus(GAME_STATUS_STARTED)
                 window.addEventListener('keydown', game.move)
             } else if (this.getElement().classList[1] === GAME_STATUS_STOPPED) {
-                window.location.reload();
+                // window.location.reload();
+                let default_snake_part = [
+                    {top: 0, left: 0},
+                    {top: 0, left: 1},
+                    {top: 0, left: 2},
+                ]
+                let default_food_part = [
+                    {top: 5, left: 5},
+                    {top: 1, left: 2},
+                    {top: 8, left: 6}
+                ]
+                this.setGameStatus(GAME_STATUS_STARTED)
+                board.render();
+                snake.parts = default_snake_part
+                snake.render();
+                food.items = default_food_part
+                food.render();
+
 
             }
         }
@@ -77,19 +94,19 @@ const game = {
      * Функция останавливает игру.
      */
     stop() {
-        
-        /* добавить сюда код */
-        // this.setGameStatus(GAME_STATUS_STOPPED);
-        // game.count = 0
-        // game.getCountElement().textContent = game.count
-        // let list_cell = board.getElement().querySelectorAll('.cell')
-        // for (let i of list_cell) {
-        //     i.remove()
-        // }
-        // const startButton = document.getElementById('button-start');
-        // startButton.disabled = false
 
-         window.location.reload();
+        /* добавить сюда код */
+        this.setGameStatus(GAME_STATUS_STOPPED);
+        game.count = 0
+        game.getCountElement().textContent = game.count
+        let list_cell = board.getElement().querySelectorAll('.cell')
+        for (let i of list_cell) {
+            i.remove()
+        }
+        const startButton = document.getElementById('button-start');
+        startButton.disabled = false
+
+        // window.location.reload();
 
 
     },
@@ -158,14 +175,14 @@ const game = {
         /* перерендериваем змейку */
         snake.render();
         const foundSnakeBody = snake.foundSnakePos(nextPosition)
-        if (foundSnakeBody){
+        if (foundSnakeBody) {
             game.setGameStatus(GAME_STATUS_STOPPED)
             board.getElement().innerHTML = `
             <div class="game_over">Вы проиграли</div>   
             `
-            setTimeout(()=>{
+            setTimeout(() => {
                 window.location.reload();
-            },3000)
+            }, 3000)
 
 
         }
@@ -285,6 +302,7 @@ const snake = {
         {top: 0, left: 1},
         {top: 0, left: 2},
     ],
+
 
     /**
      * Функция устанавливает направление движения.
